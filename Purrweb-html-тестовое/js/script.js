@@ -8,7 +8,7 @@ $('.twitter-slider .container').slick({
    appendDots: $('.twitter-slider__dots')
 });
 
-;
+
 $(window).resize(function (event) {
    adaptiveFunction();
 });
@@ -51,8 +51,7 @@ $('.header-menu__icon').click(function (event) {
    }
 });
 
-console.log('resp');
-;
+
 
 
 

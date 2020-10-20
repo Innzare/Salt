@@ -40,4 +40,3 @@ $('.header-menu__icon').click(function (event) {
    }
 });
 
-console.log('resp');
