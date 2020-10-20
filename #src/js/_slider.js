@@ -1,3 +1,4 @@
+// === Настройки слайдера
 $('.twitter-slider .container').slick({
    arrows: false,
    autoplay: true,
@@ -7,4 +8,5 @@ $('.twitter-slider .container').slick({
    dots: true,
    appendDots: $('.twitter-slider__dots')
 });
+// === Настройки слайдера
 

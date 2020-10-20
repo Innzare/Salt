@@ -191,6 +191,10 @@
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            @include phones {
+               width: 12px;
+               height: 14px;
+            }
          }
       }
       svg {
@@ -222,6 +226,9 @@
          @include flexbox;
          justify-content: center;
          margin-top: 60px;
+      }
+      @include phones {
+         margin-top: 16px;
       }
       button {
          width: 174px;
@@ -255,6 +262,9 @@
 
 .find-more {
    margin-top: 139px;
+   @include phones {
+      margin-top: 17px;
+   }
    .find-more__text {
       font-size: 15px;
       font-weight: bold;
@@ -265,11 +275,17 @@
       text-align: center;
       color: #ffffff;
       text-transform: uppercase;
+      @include phones {
+         font-size: 12px;
+      }
    }
    .find-more__icon {
       margin-top: 26px;
       @include flexbox;
       justify-content: center;
+      @include phones {
+         margin-top: 16px;
+      }
       .find-more__icon-block {
          cursor: pointer;
          width: 61px;

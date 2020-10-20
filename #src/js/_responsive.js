@@ -1,3 +1,4 @@
+// === Адаптивность навигации
 $(window).resize(function (event) {
    adaptiveFunction();
 });
@@ -26,8 +27,9 @@ function adaptiveFunction() {
 }
 
 adaptiveFunction();
+// === Адаптивность навигации
 
-// Вызов меню бургер
+// === Вызов меню бургер
 $('.header-menu__icon').click(function (event) {
    $(this).toggleClass('active');
    $('.header-menu').toggleClass('active');
@@ -39,4 +41,5 @@ $('.header-menu__icon').click(function (event) {
       $('body,html').scrollTop(parseInt($('body').data('scroll')));
    }
 });
+// === Вызов меню бургер
 
