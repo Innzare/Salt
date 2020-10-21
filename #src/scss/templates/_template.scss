@@ -186,27 +186,33 @@ $orange: #ff8b00;
 }
 
 // // Стили для кнопок ==================================================================
-// .btn {
-//    height: 50px;
-//    line-height: 50px;
-//    background-color: #000000;
-//    color: #ffffff;
-//    display: inline-block;
-//    padding: 0 33px;
-//    font-size: 15px;
-//    font-family: "Bebas";
-//    text-transform: uppercase;
-//    letter-spacing: 1.5px;
-//    &--w {
-//       background-color: #ffffff;
-//       color: #000000;
-//    }
-//    &:--b {
-//       width: 100%;
-//    }
-//    @media (max-width: ) {
-//    }
-// }
+.btn {
+   width: 174px;
+   height: 54px;
+   border-radius: 4px;
+   background-color: #ff8b00;
+   font-size: 14.5px;
+   font-weight: 400;
+   font-stretch: normal;
+   font-style: normal;
+   line-height: 1.1;
+   letter-spacing: normal;
+   text-align: center;
+   color: #ffffff;
+   text-transform: uppercase;
+   transition: box-shadow 0.2s;
+   &:hover {
+      box-shadow: 0 0 10px 0.5px $orange;
+   }
+   &:active {
+      box-shadow: 0 0 20px 3px $orange;
+   }
+   @include desktop {
+      width: 154px;
+      height: 44px;
+      font-size: 12.5px;
+   }
+}
 
 // // Стили для инпутов =================================================================
 // .input {

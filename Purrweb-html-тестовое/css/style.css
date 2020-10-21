@@ -131,6 +131,37 @@ h6 {
   display: none;
 }
 
+.btn {
+  width: 174px;
+  height: 54px;
+  border-radius: 4px;
+  background-color: #ff8b00;
+  font-size: 14.5px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.1;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  -webkit-transition: -webkit-box-shadow 0.2s;
+  transition: -webkit-box-shadow 0.2s;
+  -o-transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s;
+  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
+}
+
+.btn:hover {
+  -webkit-box-shadow: 0 0 10px 0.5px #ff8b00;
+          box-shadow: 0 0 10px 0.5px #ff8b00;
+}
+
+.btn:active {
+  -webkit-box-shadow: 0 0 20px 3px #ff8b00;
+          box-shadow: 0 0 20px 3px #ff8b00;
+}
+
 .header {
   background-image: url("./../img/Header/Background.png");
   background-repeat: no-repeat;
@@ -308,37 +339,6 @@ h6 {
   margin: 0 auto;
 }
 
-.twitter-slider__button .twitter-slider__btn button {
-  width: 174px;
-  height: 54px;
-  border-radius: 4px;
-  background-color: #ff8b00;
-  font-size: 14.5px;
-  font-weight: 400;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.1;
-  letter-spacing: normal;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  -webkit-transition: -webkit-box-shadow 0.2s;
-  transition: -webkit-box-shadow 0.2s;
-  -o-transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s;
-  transition: box-shadow 0.2s, -webkit-box-shadow 0.2s;
-}
-
-.twitter-slider__button .twitter-slider__btn button:hover {
-  -webkit-box-shadow: 0 0 10px 0.5px #ff8b00;
-          box-shadow: 0 0 10px 0.5px #ff8b00;
-}
-
-.twitter-slider__button .twitter-slider__btn button:active {
-  -webkit-box-shadow: 0 0 20px 3px #ff8b00;
-          box-shadow: 0 0 20px 3px #ff8b00;
-}
-
 .find-more {
   margin-top: 139px;
 }
@@ -441,6 +441,7 @@ h6 {
   background-color: #f8f8f8;
   margin-top: 130px;
   padding-top: 172px;
+  padding-bottom: 20px;
 }
 
 .what-we-do .container {
@@ -534,9 +535,230 @@ h6 {
   color: #878787;
 }
 
+.product-spotlight {
+  margin-top: 106px;
+  padding-bottom: 120px;
+}
+
+.product-spotlight .container {
+  max-width: 1325px;
+}
+
+.product-spotlight .product-spotlight__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.product-spotlight .product-spotlight__text-block {
+  padding-top: 114px;
+  padding-left: 23px;
+  margin-right: 106px;
+}
+
+.product-spotlight .product-spotlight__title {
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.45;
+  letter-spacing: normal;
+  color: #7050e5;
+  margin-bottom: 23px;
+}
+
+.product-spotlight .product-spotlight__text {
+  max-width: 472px;
+  font-size: 15px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: normal;
+  text-align: left;
+  color: #878787;
+  margin-bottom: 28px;
+}
+
+.product-spotlight .product-spotlight__video {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.product-spotlight .product-spotlight__video:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.product-spotlight .product-spotlight__video img.video-img {
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+}
+
+.product-spotlight .play-icon {
+  position: absolute;
+  z-index: 111;
+  top: 37%;
+  left: 44%;
+  opacity: 0.9;
+}
+
+.product-spotlight .play-icon img {
+  z-index: 11;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+}
+
+.product-spotlight .video-title {
+  position: absolute;
+  font-family: "Raleway";
+  z-index: 11;
+  top: 60%;
+  left: 40%;
+  opacity: 0.9;
+  font-size: 16px;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: 2px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.product-spotlight .video-text {
+  position: absolute;
+  font-family: "Raleway";
+  z-index: 11;
+  top: 65%;
+  left: 16%;
+  opacity: 0.9;
+  font-size: 33px;
+  font-weight: 700;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.47;
+  letter-spacing: 3px;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.product-spotlight .popup-block {
+  display: none;
+}
+
+.product-spotlight .active {
+  display: block;
+}
+
+.product-spotlight .layout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.93;
+  background-color: #373653;
+  z-index: 10000000000;
+  cursor: pointer;
+}
+
+.product-spotlight .popup {
+  position: fixed;
+  width: 600px;
+  height: 345px;
+  top: 30%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10000000000;
+  background-color: #ffffff;
+  margin: 120px auto 0;
+}
+
+.not-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.ready {
+  background-image: url("./../img/Ready/1.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ready .ready-body {
+  padding: 82px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ready .ready-body-text {
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 0.45;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+@media (max-width: 1366px) {
+  .product-spotlight .product-spotlight__body {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .product-spotlight .product-spotlight__text-block {
+    margin-right: 20px;
+  }
+
+  .product-spotlight .product-spotlight__video img.video-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 1197px) {
+  .product-spotlight .product-spotlight__body {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .product-spotlight .product-spotlight__text-block {
+    padding-left: 0;
+    padding-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 1150px) {
   .container {
     max-width: 768px;
+  }
+
+  .btn {
+    width: 154px;
+    height: 44px;
+    font-size: 12.5px;
   }
 
   .header {
@@ -570,12 +792,6 @@ h6 {
   .twitter-slider__button .twitter-slider__btn {
     max-width: 768px;
     padding-left: 0px;
-  }
-
-  .twitter-slider__button .twitter-slider__btn button {
-    width: 154px;
-    height: 44px;
-    font-size: 12.5px;
   }
 
   .achiev {
@@ -752,6 +968,64 @@ h6 {
   .what-we-do .what-we-do__item-text {
     font-size: 13px;
   }
+
+  .product-spotlight {
+    margin-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .product-spotlight .product-spotlight__video img.video-img {
+    height: 250px;
+  }
+
+  .product-spotlight .play-icon {
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .product-spotlight .video-title {
+    top: 75%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 14px;
+    line-height: 1.47;
+  }
+
+  .product-spotlight .video-text {
+    top: 85%;
+    left: 50%;
+    margin-right: -50%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    font-size: 18px;
+    line-height: 1.07;
+  }
+
+  .product-spotlight .popup {
+    width: 420px;
+    height: 245px;
+  }
+
+  .ready .ready-body {
+    padding: 42px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .ready .ready-body-text {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -904,12 +1178,50 @@ h6 {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
+
+  .product-spotlight .product-spotlight__title {
+    font-size: 33px;
+  }
+
+  .product-spotlight .video-title {
+    font-size: 12px;
+  }
+
+  .product-spotlight .video-text {
+    font-size: 16px;
+  }
+
+  .product-spotlight .popup {
+    width: 310px;
+    height: 145px;
+  }
+
+  .ready .ready-body-text {
+    font-size: 25px;
+  }
 }
 @supports (-webkit-appearance:none){
 .header{background-image:url("./../img/Header/Background.webp")}
 .twitter-slider .twitter-slider__dots .slick-dots li.slick-active button{background-image:url("./../img/svg/active-slider-dot.svg")}
 .twitter-slider .twitter-slider__dots .slick-dots button{background-image:url("./../img/svg/Slider-dot.svg")}
 .find-more .find-more__icon .find-more__icon-block{background-image:url("./../img/Header/Find.webp")}
+.ready{background-image:url("./../img/Ready/1.webp")}
+}
+
+ @media (max-width: 1366px){
+
+@supports (-webkit-appearance:none){
+
+}
+
+}
+
+ @media (max-width: 1197px){
+
+@supports (-webkit-appearance:none){
+
+}
+
 }
 
  @media screen and (max-width: 1150px){
