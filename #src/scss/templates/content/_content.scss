@@ -1,7 +1,10 @@
 .achiev {
    margin-top: 160px;
    @include desktop {
-      margin: 120px;
+      margin-top: 120px;
+   }
+   @include tablets {
+      margin-top: 90px;
    }
    .container {
       max-width: 930px;
@@ -12,6 +15,9 @@
       flex-wrap: wrap;
       @include desktop {
          justify-content: center;
+      }
+      @include phones {
+         flex-direction: column;
       }
    }
    .achiev-column {
@@ -37,6 +43,13 @@
       letter-spacing: normal;
       color: #7050e5;
       margin-bottom: 36px;
+      @include desktop {
+         font-size: 45px;
+         margin-bottom: 20px;
+      }
+      @include tablets {
+         font-size: 35px;
+      }
    }
    .achiev-column__text {
       text-align: center;
@@ -50,6 +63,13 @@
       text-transform: uppercase;
       max-width: 291px;
       margin: 0 auto;
+      @include desktop {
+         font-size: 15px;
+         padding: 0 5px;
+      }
+      @include tablets {
+         font-size: 13px;
+      }
    }
 }
 
