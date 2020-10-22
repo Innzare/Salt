@@ -1,6 +1,134 @@
 .footer {
+   background-color: #363636;
    footer {
+      position: relative;
+      img.footer-logo {
+         position: absolute;
+         bottom: 64px;
+         right: 134px;
+         @include tablets {
+            display: none;
+         }
+      }
+      .container {
+         @include phones {
+            width: 98%;
+         }
+      }
+   }
+   li {
+      a {
+         font-size: 14px;
+         font-weight: normal;
+         font-stretch: normal;
+         font-style: normal;
+         line-height: 1.71;
+         letter-spacing: 0.7px;
+         text-align: left;
+         color: #ffffff;
+         text-transform: uppercase;
+         @include desktop {
+            font-size: 12px;
+         }
+         @include tablets {
+            font-size: 10px;
+         }
+      }
    }
    .footer-body {
+      padding-top: 57px;
+      padding-bottom: 48px;
+      @include flexbox;
+      justify-content: space-between;
+      @include tablets {
+         flex-wrap: wrap;
+         justify-content: center;
+         padding-top: 37px;
+      }
+   }
+   .footer-twitter-block {
+      @include tablets {
+         margin-bottom: 20px;
+      }
+   }
+   .footer-links-block {
+      @include flexbox;
+      justify-content: space-around;
+      width: 100%;
+      @include tablets {
+         flex-wrap: wrap;
+         justify-content: flex-start;
+      }
+      @media screen and (max-width: 375px) {
+         flex-direction: column;
+         flex-wrap: nowrap;
+      }
+   }
+   .footer-column {
+      flex: 0 0 33.333%;
+      @include flexbox;
+      justify-content: center;
+      @media screen and (max-width: 375px) {
+         justify-content: flex-start;
+         margin-bottom: 10px;
+         padding-left: 30px;
+      }
+   }
+   .footer-column-title {
+      position: relative;
+      padding-left: 16px;
+      font-size: 14px;
+      font-weight: bold;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.56px;
+      text-align: left;
+      color: #ff8b00;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      &::before {
+         content: "";
+         position: absolute;
+         width: 9px;
+         height: 10px;
+         background-image: url("./../img/svg/decor-icon.svg");
+         background-position: left;
+         background-repeat: no-repeat;
+         left: 0;
+         top: 3px;
+      }
+      @include tablets {
+         font-size: 12px;
+      }
+   }
+   .footer-contact {
+      span.email {
+         text-transform: lowercase;
+      }
+   }
+   .footer-copyright {
+      background-color: #252525;
+      padding: 10px 0;
+      span.decor-icon {
+         margin: 0 2px;
+         display: inline-block;
+         width: 9px;
+         height: 10px;
+         background-image: url("./../img/svg/decor-icon.svg");
+         background-position: center;
+         background-repeat: no-repeat;
+      }
+   }
+   .footer-copyright__text {
+      font-family: Raleway;
+      font-size: 10px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: 0.4px;
+      text-align: center;
+      color: #9b9b9b;
    }
 }
